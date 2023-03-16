@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+
+    <!-- tailwind linking -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9d8bd229e5.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-10">Welcome to my <span class="font-bold text-cyan-500">Text Editor</span>
+            section!</h1>
+        <h2 class="mt-10 text-4xl text-center font-semibold text-cyan-600">This is my own Text Editor</h2>
+    </header>
+    <main>
+        <section>
+            <div class="bg-sky-100 p-12 rounded w-9/12 mx-auto mt-6">
+                <div class="w-10/12 mx-auto flex justify-between">
+                    <div class="flex gap-6">
+                        <i id="icon-bold" onclick="fBold(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-b"></i>
+                        <i id="icon-italic" onclick="fItalic(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-italic"></i>
+                        <i id="icon-underline" onclick="fUnderline(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-underline"></i>
+                    </div>
+                    <div class="flex gap-6">
+                        <i id="icon-left" onclick="fLeft(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-align-left"></i>
+                        <i id="icon-center" onclick="fCenter(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-align-center"></i>
+                        <i id="icon-right" onclick="fRight(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-align-right"></i>
+                        <i id="icon-justify" onclick="fJustify(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50 fa-solid fa-align-justify"></i>
+                    </div>
+                    <div class="flex gap-6 content-center">
+                        <input id="font-change" onchange="fChange(this)" class="w-14 rounded pl-2" type="number" name=""
+                            placeholder="24" value="24">
+                        <button id="icon-uppercase" onclick="fUppercase(this)"
+                            class="py-2 px-3 rounded hover:bg-cyan-700 hover:text-gray-50">aA</button>
+                        <input type="color" id="icon-color" onchange="fColor(this)" name="favcolor" value="#00Bfff">
+                    </div>
+                </div>
+                <div class="mx-auto w-11/12 bg-cyan-700 rounded py-3 px-3 mt-6">
+                    <textarea id="text-area-field" class="w-full p-5" name="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- js -->
+    <script src="js/text-editor.js"></script>
+</body>
+
+</html>

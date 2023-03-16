@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-12 text-center">
+        <h1 class="text-4xl">Discount <span class="font-bold text-red-600">30%</span> in our courses.</h1>
+    </header>
+    <main>
+        <section class="w-9/12 mx-auto mt-12 bg-green-200 rounded-lg p-10">
+        <div>
+            <h2 class="text-3xl">Course Price : <span class="font-bold text-red-600">1000</span> tk</h2>
+        </div>
+        <p class="mt-4 text-3xl">Coupon Code: <input id="coupon-field" class="p-2 rounded-lg" type="text" name="" placeholder="DISC30" ></p>
+        <button id="btn-calculate" class="mt-4 bg-red-500 hover:bg-green-700 text-white p-2 rounded-lg text-xl font-bold">Apply</button>
+        <p id="result-output" class="mt-4 text-3xl font-semibold"></p>
+        </section>
+    </main>
+
+    <!-- js file -->
+    <script src="js/discount.js"></script>
+</body>
+
+</html>
